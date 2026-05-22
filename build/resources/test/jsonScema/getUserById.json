@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "nama": {
+          "type": "string"
+        },
+        "nis": {
+          "type": "string"
+        },
+        "kelas": {
+          "type": "string"
+        },
+        "jurusan": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "telepon": {
+          "type": "string"
+        },
+        "alamat": {
+          "type": "string"
+        },
+        "created_by": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "nama",
+        "nis",
+        "kelas",
+        "jurusan",
+        "email",
+        "telepon",
+        "alamat",
+        "created_by",
+        "created_at",
+        "updated_at"
+      ]
+    }
+  },
+  "required": [
+    "success",
+    "data"
+  ]
+}
