@@ -24,4 +24,5 @@ test {
     testLogging {
         events("PASSED", "FAILED", "SKIPPED")
     }
+    failOnNoDiscoveredTests = false
 }
