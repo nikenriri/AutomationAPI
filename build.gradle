@@ -18,8 +18,8 @@ dependencies {
 }
 
 test {
-    useTestNG{
-        suites "\\src\\test\\resources\\testng.xml"
+    useTestNG(){
+        suites "src/test/resources/testng.xml"
     }
     testLogging {
         events("PASSED", "FAILED", "SKIPPED")
