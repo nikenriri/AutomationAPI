@@ -1,0 +1,1 @@
+{"uuid":"b9dc501d-1304-4244-92dd-b23c60442b6e","name":"testauto.TestApi","children":["6a699d13-daa8-4a20-b6c8-6d298c6b443c"],"befores":[{"name":"testLoginUser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1779523149759,"stop":1779523154644}],"afters":[],"start":1779523149684,"stop":1779523156018}

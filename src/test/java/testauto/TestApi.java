@@ -97,12 +97,12 @@ public class TestApi {
 
     @Test
     public void testPutUpdateUser(){
-        String valueName = "Lulu Putri Cantika";
+        String valueName = "Lulu Dwi Cantika";
         String valueNis = "124200015";
         String valueKelas = "XI-IPA-2";
         String valueJurusan = "IPA";
         String valueEmail = "cantika.15@gmail.com";
-        String valueTelp = "08589044490";
+        String valueTelp = "08589044495";
         String valueAlamat = "Salatiga";
 
         JSONObject bodyObj = new JSONObject();
@@ -135,7 +135,7 @@ public class TestApi {
 
         JSONObject bodyObj = new JSONObject();
 
-        bodyObj.put("email", valueName);
+        bodyObj.put("nama", valueName);
 
         RestAssured.given()
                 .auth()
@@ -147,13 +147,13 @@ public class TestApi {
                 .patch("https://api.rizqifauzan.com/api/siswa/" + userId)
                 .then().log().all()
                 .assertThat().statusCode(200)
-                .assertThat().body("data.email", Matchers.equalTo(valueName));
+                .assertThat().body("data.nama", Matchers.equalTo(valueName));
     }
 
     @Test
     public void testDeleteUser(){
 
-        String userToDelete = "24ec2d47-f925-44df-80cd-2064c5f099d1";
+        String userToDelete = "7b947e7f-389a-40f8-b096-5b4dc429ad3f";
 
         RestAssured
                 .given()
