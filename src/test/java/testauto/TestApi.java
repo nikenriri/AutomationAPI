@@ -64,13 +64,13 @@ public class TestApi {
 
     @Test
     public void testPostCeateUser(){
-        String valueName = "Dewi Sartika";
-        String valueNis = "124200001";
-        String valueKelas = "XI-IPS-2";
-        String valueJurusan = "IPS";
-        String valueEmail = "dewi.05@gmail.com";
-        String valueTelp = "085890344142";
-        String valueAlamat = "Semarang";
+        String valueName = "Lulu Cantika";
+        String valueNis = "124200015";
+        String valueKelas = "XI-IPA-2";
+        String valueJurusan = "IPA";
+        String valueEmail = "cantika.15@gmail.com";
+        String valueTelp = "08589044490";
+        String valueAlamat = "Salatiga";
 
         JSONObject bodyObj = new JSONObject();
 
@@ -122,7 +122,7 @@ public class TestApi {
                 .header("Accept", "application/json")
                 .body(bodyObj.toString())
                 .when()
-                .put("https://api.rizqifauzan.com/api/siswa/24905351-4daf-4c50-ab00-f3e052f64e95")
+                .put("https://api.rizqifauzan.com/api/siswa/75f923f0-d9c1-4de5-979d-f7f97736ce46")
                 .then().log().all()
                 .assertThat().statusCode(200)
                 .assertThat().body("data.nama", Matchers.equalTo(valueName));
@@ -130,7 +130,7 @@ public class TestApi {
 
     @Test
     public void testPatchUpdateUser(){
-        String userId = "24905351-4daf-4c50-ab00-f3e052f64e95";
+        String userId = "75f923f0-d9c1-4de5-979d-f7f97736ce46";
         String valueEmail = "widiany.putri@gmail.com";
 
         JSONObject bodyObj = new JSONObject();
@@ -153,7 +153,7 @@ public class TestApi {
     @Test
     public void testDeleteUser(){
 
-        String userToDelete = "bdb49d4c-dc36-4011-b46a-c62026ceaa45";
+        String userToDelete = "1eada7fe-4b0a-4dda-a25a-5ed9658ae0bb";
 
         RestAssured
                 .given()
